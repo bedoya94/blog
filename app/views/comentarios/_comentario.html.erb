@@ -1,0 +1,15 @@
+
+<p>
+  <strong>Comenta:</strong>
+  <%= comentario.nombre %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= comentario.cuerpo %>
+</p>
+<p>
+  <%= link_to 'Eliminar Comentario', [comentario.articulo, comentario],
+               method: :delete,
+               data: { confirm: '¿Estas seguro de eliminar el comentario?' } %>
+</p>
